@@ -1,4 +1,4 @@
-/* Styles for index.html */
+/* ----------STYLES FOR INDEX.HTML------------ */
 
 :root {
   --text-color: #757575;
@@ -25,6 +25,9 @@ body {
 h1,
 h2,
 h3,
+h4,
+h5,
+h6,
 p {
   margin-top: 0;
   margin-bottom: 0;
@@ -61,7 +64,7 @@ img {
   overflow: hidden;
 }
 
-/* Components */
+/* --------------COMPONENTS----------- */
 .container {
   width: 1200px;
   margin-right: auto;
@@ -83,10 +86,9 @@ img {
   text-align: center;
   color: var(--title-color);
 }
+/* ------------END COMPONENTS------------ */
 
-/* End Components */
-
-/* Header */
+/* ------------HEADER--------------*/
 .header {
   padding-top: 32px;
   padding-bottom: 32px;
@@ -150,9 +152,9 @@ img {
 .nav-link.current {
   color: var(--accent-color);
 }
-/* End Header */
+/* -----------------END HEADER------------- */
 
-/* Hero */
+/* -----------------HERO------------------- */
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
@@ -196,9 +198,9 @@ img {
   background-color: #188ce8;
   outline: none;
 }
-/* End Hero */
+/* ---------------END HERO--------------- */
 
-/* Feature */
+/* ---------------FEATURE--------------- */
 .feature-list {
   display: flex;
   margin-right: calc(-1 * var(--grid-gap));
@@ -206,8 +208,7 @@ img {
 }
 
 .feature-list-item {
-  flex-basis: calc((100% - var(--grid-item) * 30px) / var(--grid-item));
-  /* width: 270px; */
+  flex-basis: calc((100% - var(--grid-item) * var(--grid-gap)) / var(--grid-item));
   --grid-item: 4;
   margin-right: var(--grid-gap);
   margin-bottom: var(--grid-gap);
@@ -221,10 +222,9 @@ img {
   text-transform: uppercase;
   color: var(--title-color);
 }
+/* ----------------END FEATURE-------------- */
 
-/* End Feature */
-
-/* Services */
+/* -----------------SERVICES---------------- */
 
 .services.section {
   padding-top: 0;
@@ -242,13 +242,10 @@ img {
   margin-right: var(--grid-gap);
   margin-bottom: var(--grid-gap);
 }
+/* ---------------END SERVICES----------- */
 
-/* .services-list-item:not(:last-child) {
-  margin-right: 30px;
-} */
-/* End Service */
+/* -----------------TEAM---------------- */
 
-/* Team */
 .team.section {
   background: #f5f4fa;
 }
@@ -285,13 +282,18 @@ img {
   font-size: 16px;
   line-height: 1.19;
 }
-/* End Team */
+/* -----------END TEAM---------------- */
 
-/* Footer */
+/* ---------------FOOTER----------- */
+
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--secondary-bcg-color);
+}
+
+.footer-content {
+  margin-top: 20px;
 }
 
 .logo-part-light {
@@ -299,30 +301,27 @@ img {
 }
 
 .adress {
-  margin-top: 20px;
   margin-bottom: 9px;
 
   font-style: normal;
   color: var(--primary-bcg-color);
 }
 
-.contacts-footer-link {
-  color: rgba(255, 255, 255, 0.6);
-}
-
 .contacts-footer-item:first-child {
   margin-bottom: 9px;
 }
 
-/* End Footer */
+.contacts-footer-link {
+  color: rgba(255, 255, 255, 0.6);
+}
+/* -----------END FOOTER--------------- */
 
-/* Styles for portfolio.html */
-/* Portfolio desk */
+/* -------STYLES FOR PORTFOLIO.HTML------ */
+/* ------------PROJECT SET -------------- */
 .project-filter {
   display: flex;
   justify-content: center;
-  padding-bottom: 16px;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
 }
 
 .project-filter-item:not(:last-child) {
@@ -384,4 +383,7 @@ img {
   color: var(--text-color);
 }
 
-/* End Portfolio desk */
+.footer-content {
+  min-width: 230px;
+}
+/* -----------END PROJECT SET----------- */
