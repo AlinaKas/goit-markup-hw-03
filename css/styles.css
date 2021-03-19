@@ -132,10 +132,21 @@ img {
 
 .nav .logo {
   margin-right: 93px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .nav-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--title-color);
+}
+
+.contacts-header-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .nav-item:not(:last-child),
@@ -149,11 +160,6 @@ img {
 .contacts-header-link:focus,
 .nav-link.current {
   color: var(--accent-color);
-}
-
-.header .link {
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 /* -----------------END HEADER------------- */
 
