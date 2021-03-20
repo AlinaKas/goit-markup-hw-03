@@ -275,7 +275,7 @@ img {
 }
 
 .team-list-item-content {
-  padding: 30px 32px;
+  padding: 30px 30px;
 }
 
 .team-item-name {
@@ -371,11 +371,13 @@ img {
   margin-right: var(--grid-gap);
   margin-bottom: var(--grid-gap);
 
-  border-bottom: 1px solid #eeeeee;
+  /* border-bottom: 1px solid #eeeeee; */
 }
 
 .project-set-content {
   padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: 0;
 }
 
 .project-title {
